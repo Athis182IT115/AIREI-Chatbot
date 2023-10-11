@@ -7,8 +7,8 @@ st.set_page_config(page_title='MyPalm', page_icon='sime_logo.png')
 st.image('mypalm_logo.png', width=220)
 
 # Create buttons for different sections
-#st.write("__**:red[Choose your category:]**__")
-st.write('__**:red[MyPalm Bot : ]:white[Hi! I am MyPalm Bot. What Information are you looking for? Click on one of the options below to start!!]**__')
+st.image("sime_logo.png", width=25)
+st.write('__**Hi! I am MyPalm Bot. What Information are you looking for? Click on one of the options below to start!!**__')
 button1 = st.button('__**:orange[Production Module]**__', key='1')
 button2 = st.button("__**:orange[Maintenance Module]**__", key='2')
 button3 = st.button("__**:orange[General Questions]**__", key='3')
@@ -40,9 +40,10 @@ if button3:
 
 # Display content based on button clicks
 if st.session_state.button1:
-    st.write('__**:green[User Answer : ]:white[Production Module]**__')
+    st.markdown("<h6 style='text-align: right; color:white;'>👨‍🚒 : Production Module</h6>", unsafe_allow_html=True)
     st.divider()
-    st.write("__**:red[MyPalm Bot : ]:white[Choose your domian below!!!]**__")
+    st.image("sime_logo.png", width=25)
+    st.write("__**:white[Choose your domian below!!!]**__")
     button4 = st.button('__**:orange[Sterilization]**__', key='4')
     button5 = st.button("__**:orange[Pressing]**__", key='5')
     button6 = st.button("__**:orange[Oil Losses]**__", key='6')
@@ -91,9 +92,10 @@ if st.session_state.button1:
         st.session_state.button7 = True
 
     if st.session_state.button7:
-        st.write('__**:green[User Answer : ]:white[Mill Production and Breakdown]**__')
+        st.markdown("<h6 style='text-align: right; color:white;'>👨‍🚒 : Mill Production and Breakdown</h6>", unsafe_allow_html=True)
         st.divider()
-        st.write("__**:red[MyPalm Bot : ]:white[Pick your Query below!!!]**__")
+        st.image("sime_logo.png", width=25)
+        st.write("__**:white[Pick your Query below!!!]**__")
         button8 = st.button('__**:orange[How to Start the Production?]**__', key='8')
         button9 = st.button("__**:orange[How to Stop the Production?]**__", key='9')
         button10 = st.button("__**:orange[How to turn On the machine?]**__", key='10')
@@ -199,11 +201,13 @@ if st.session_state.button1:
             st.session_state.button12 = False
             st.session_state.button13 = True
         if st.session_state.button8:
-            st.write('__**:green[User Answer : ]:white[How to Start the Production?]**__')
+            st.markdown("<h6 style='text-align: right; color:white;'>👨‍🚒 : How to Start the Production?</h6>", unsafe_allow_html=True)
             st.divider()
-            st.write("__**:red[MyPalm Bot : ]:white[This access is given to the Supervisor only. Supervisor can Start the mill production via mobile application]**__")
+            st.image("sime_logo.png", width=25)
+            st.write("__**:white[This access is given to the Supervisor only. Supervisor can Start the mill production via mobile application]**__")
             st.divider()
-            st.write('__**:red[MyPalm Bot : ]:white[Thankyou and remember MyPalm Bot is always here to help you!!!]**__')
+            st.image("sime_logo.png", width=25)
+            st.write('__**:white[Thankyou and remember MyPalm Bot is always here to help you!!!]**__')
             st.divider()
 
 

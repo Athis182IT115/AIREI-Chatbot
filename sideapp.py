@@ -1,4 +1,5 @@
 import streamlit as st
+import pyautogui
 
 # Set page title and icon
 st.set_page_config(page_title='MyPalm', page_icon='sime_logo.png')
@@ -13,7 +14,7 @@ button1 = st.button('__**:orange[Production Module]**__', key='1')
 button2 = st.button("__**:orange[Maintenance Module]**__", key='2')
 button3 = st.button("__**:orange[General Questions]**__", key='3')
 st.divider()
-
+pyautogui.press('end')
 # Initialize session_state
 if 'button1' not in st.session_state:
     st.session_state.button1 = False
@@ -49,6 +50,7 @@ if st.session_state.button1:
     button6 = st.button("__**:orange[Oil Losses]**__", key='6')
     button7 = st.button("__**:orange[Mill Production and Breakdown]**__", key='7')
     st.divider()
+    pyautogui.press('end')
     if 'button4' not in st.session_state:
         st.session_state.button4 = False
     if 'button5' not in st.session_state:
@@ -103,6 +105,7 @@ if st.session_state.button1:
         button12 = st.button("__**:orange[How to report Mill Breakdown?]**__", key='12')
         button13 = st.button("__**:orange[How to report Machinery Breakdown?]**__", key='13')
         st.divider()
+        pyautogui.press('end')
         if 'button8' not in st.session_state:
             st.session_state.button8 = False
         if 'button9' not in st.session_state:
@@ -209,7 +212,7 @@ if st.session_state.button1:
             st.image("sime_logo.png", width=25)
             st.write('__**:white[Thankyou and remember MyPalm Bot is always here to help you!!!]**__')
             st.divider()
-
+            pyautogui.press('end')
 
 if st.session_state.button2:
     st.write("button2 is True")

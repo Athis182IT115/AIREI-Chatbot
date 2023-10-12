@@ -8,11 +8,11 @@ st.image('mypalm_logo.png', width=220)
 
 # Create buttons for different sections
 st.image("sime_logo.png", width=25)
-st.chat_input("Click on the buttons to start!")
-st.write('__**Hi! I am MyPalm Bot. What Information are you looking for? Click on one of the options below to start!!**__')
-button1 = st.button('__**:orange[Production Module]**__', key='1')
-button2 = st.button("__**:orange[Maintenance Module]**__", key='2')
-button3 = st.button("__**:orange[General Questions]**__", key='3')
+st.chat_input("Hi! I am MyPalm Bot!! What Information are you looking for? Click the above buttons to start!")
+#st.write('__**Hi! I am MyPalm Bot. What Information are you looking for? Click on one of the options below to start!!**__')
+button1 = st.button('__**:orange[Production Module 🏭]**__', key='1')
+button2 = st.button("__**:orange[Maintenance Module 🎰]**__", key='2')
+button3 = st.button("__**:orange[General Questions 💤]**__", key='3')
 st.divider()
 # Initialize session_state
 if 'button1' not in st.session_state:
@@ -44,13 +44,13 @@ if st.session_state.button1:
     st.markdown("<h6 style='text-align: right; color:black;'>👨‍🚒 : Production Module</h6>", unsafe_allow_html=True)
     st.divider()
     st.image("sime_logo.png", width=25)
-    st.write("__**:white[Choose your domian below!!!]**__")
-    button4 = st.button('__**:orange[Sterilization]**__', key='4')
-    button5 = st.button("__**:orange[Pressing]**__", key='5')
-    button6 = st.button("__**:orange[Oil Losses]**__", key='6')
-    button7 = st.button("__**:orange[Mill Production and Breakdown]**__", key='7')
+    #st.write("__**:white[Choose your domian below!!!]**__")
+    button4 = st.button('__**:orange[Sterilization 🎒]**__', key='4')
+    button5 = st.button("__**:orange[Pressing 🗜️]**__", key='5')
+    button6 = st.button("__**:orange[Oil Losses 🥞]**__", key='6')
+    button7 = st.button("__**:orange[Mill Production and Breakdown 🧰]**__", key='7')
     st.divider()
-    st.chat_input("Select your Working station!")
+    st.chat_input("Select your Working Station above!")
     if 'button4' not in st.session_state:
         st.session_state.button4 = False
     if 'button5' not in st.session_state:
@@ -97,15 +97,15 @@ if st.session_state.button1:
         st.markdown("<h6 style='text-align: right; color:black;'>👨‍🚒 : Mill Production and Breakdown</h6>", unsafe_allow_html=True)
         st.divider()
         st.image("sime_logo.png", width=25)
-        st.write("__**:white[Pick your Query below!!!]**__")
-        button8 = st.button('__**:orange[How to Start the Production?]**__', key='8')
-        button9 = st.button("__**:orange[How to Stop the Production?]**__", key='9')
-        button10 = st.button("__**:orange[How to turn On the machine?]**__", key='10')
-        button11 = st.button("__**:orange[How to turn Off the machine?]**__", key='11')
-        button12 = st.button("__**:orange[How to report Mill Breakdown?]**__", key='12')
-        button13 = st.button("__**:orange[How to report Machinery Breakdown?]**__", key='13')
+        #st.write("__**:white[Pick your Query below!!!]**__")
+        button8 = st.button('__**:orange[How to Start the Production❓]**__', key='8')
+        button9 = st.button("__**:orange[How to Stop the Production❓]**__", key='9')
+        button10 = st.button("__**:orange[How to turn On the machine❓]**__", key='10')
+        button11 = st.button("__**:orange[How to turn Off the machine❓]**__", key='11')
+        button12 = st.button("__**:orange[How to report Mill Breakdown❓]**__", key='12')
+        button13 = st.button("__**:orange[How to report Machinery Breakdown❓]**__", key='13')
         st.divider()
-        st.chat_input("Click on your Question!")
+        st.chat_input("Pick your Query above!")
         if 'button8' not in st.session_state:
             st.session_state.button8 = False
         if 'button9' not in st.session_state:
@@ -209,7 +209,7 @@ if st.session_state.button1:
             st.image("sime_logo.png", width=25)
             st.write("__**:white[This access is given to the Supervisor only. Supervisor can Start the mill production via mobile application]**__")
             st.divider()
-            st.chat_input("Thank You for using MyPalm Bot!")
+            st.chat_input("Thank You for using MyPalm Bot!!")
 if st.session_state.button2:
     st.write("button2 is True")
 

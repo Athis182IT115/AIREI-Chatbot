@@ -108,7 +108,7 @@ if st.session_state.button0:
             st.image("sime_logo.png", width=25)
             #st.write("__**:white[Pick your Query below!!!]**__")
             button41 = st.button("__**:orange[Why can't I key in sterilizer data?]**__", key='41')
-            button42 = st.button("__**:orange[What should I do if I entered the date incorrectly?]**__", key='42')
+            button42 = st.button("__**:orange[What should I do if I entered date incorrectly?]**__", key='42')
             button43 = st.button("__**:orange[How do I key in if there is no peak graph?]**__", key='43')
             button44 = st.button("__**:orange[How to get Sterilization Station report?]**__", key='44')
             st.divider()
@@ -156,7 +156,7 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button42:
                 st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
-                st.markdown("<h6 style='text-align: right; color:black;'>What should I do if I entered the date incorrectly?</h6>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What should I do if I entered date incorrectly?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
                 st.write("__**:white[You cannot change the date by yourself. Please contact us via WhatsApp and send us the correct details so that we can assist in correcting the data.]**__")

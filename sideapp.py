@@ -8,6 +8,7 @@ st.image('mypalm_logo.png', width=220)
 
 # Create buttons for different sections
 st.image("sime_logo.png", width=25)
+st.chat_input("Click on the buttons to start!")
 st.write('__**Hi! I am MyPalm Bot. What Information are you looking for? Click on one of the options below to start!!**__')
 button1 = st.button('__**:orange[Production Module]**__', key='1')
 button2 = st.button("__**:orange[Maintenance Module]**__", key='2')
@@ -20,6 +21,7 @@ if 'button2' not in st.session_state:
     st.session_state.button2 = False
 if 'button3' not in st.session_state:
     st.session_state.button3 = False
+
 
 # Handle button clicks
 if button1:
@@ -48,6 +50,7 @@ if st.session_state.button1:
     button6 = st.button("__**:orange[Oil Losses]**__", key='6')
     button7 = st.button("__**:orange[Mill Production and Breakdown]**__", key='7')
     st.divider()
+    st.chat_input("Select your Working station!")
     if 'button4' not in st.session_state:
         st.session_state.button4 = False
     if 'button5' not in st.session_state:
@@ -102,6 +105,7 @@ if st.session_state.button1:
         button12 = st.button("__**:orange[How to report Mill Breakdown?]**__", key='12')
         button13 = st.button("__**:orange[How to report Machinery Breakdown?]**__", key='13')
         st.divider()
+        st.chat_input("Click on your Question!")
         if 'button8' not in st.session_state:
             st.session_state.button8 = False
         if 'button9' not in st.session_state:
@@ -205,10 +209,7 @@ if st.session_state.button1:
             st.image("sime_logo.png", width=25)
             st.write("__**:white[This access is given to the Supervisor only. Supervisor can Start the mill production via mobile application]**__")
             st.divider()
-            st.image("sime_logo.png", width=25)
-            st.write('__**:white[Thankyou and remember MyPalm Bot is always here to help you!!!]**__')
-            st.divider()
-
+            st.chat_input("Thank You for using MyPalm Bot!")
 if st.session_state.button2:
     st.write("button2 is True")
 

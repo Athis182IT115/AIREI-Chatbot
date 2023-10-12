@@ -101,6 +101,85 @@ if st.session_state.button0:
             st.session_state.button6 = False
             st.session_state.button7 = True
 
+        if st.session_state.button4:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>Sterilization</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button41 = st.button("__**:orange[Why can't I key in sterilizer data?]**__", key='41')
+            button42 = st.button("__**:orange[What should I do if I entered the date incorrectly?]**__", key='42')
+            button43 = st.button("__**:orange[How do I key in if there is no peak graph?]**__", key='43')
+            button44 = st.button("__**:orange[How to get Sterilization Station report?]**__", key='44')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button41' not in st.session_state:
+                st.session_state.button41 = False
+            if 'button42' not in st.session_state:
+                st.session_state.button42 = False
+            if 'button43' not in st.session_state:
+                st.session_state.button43 = False
+            if 'button44' not in st.session_state:
+                st.session_state.button44 = False
+
+            if button41:
+                st.session_state.button41 = True
+                st.session_state.button42 = False
+                st.session_state.button43 = False
+                st.session_state.button44 = False
+            if button42:
+                st.session_state.button41 = False
+                st.session_state.button42= True
+                st.session_state.button43 = False
+                st.session_state.button44 = False
+            if button43:
+                st.session_state.button41 = False
+                st.session_state.button42= False
+                st.session_state.button43 = True
+                st.session_state.button44 = False
+            if button44:
+                st.session_state.button41 = False
+                st.session_state.button42 = False
+                st.session_state.button43 = False
+                st.session_state.button44 = True
+
+            if st.session_state.button41:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why can't I key in sterilizer data?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[If you are cannot enter the sterilizer data, it may be due to incorrect door shut and open times that were entered.]**__")
+                st.write("__**:white[To address this issues you can follow this steps:]**__")
+                st.write("__**:white[1. Check previous cycle door shut time & date.]**__")
+                st.write("__**:white[2. If the previous cycle has been key in wrongly, please contact us via WhatsApp and send us the correct details so that we can assist in correcting the data.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button42:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What should I do if I entered the date incorrectly?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[You cannot change the date by yourself. Please contact us via WhatsApp and send us the correct details so that we can assist in correcting the data.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button43:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How do I key in if there is no peak graph?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[If there is no graph generated for input, you may choose not to enter the cycle data. Please contact us via WhatsApp to inform this issues.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button44:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to get Sterilization Station report?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[In the web application, you can find the 'Sterilization Station' Report in the 'Production Reports' section through the dropdown menu. This report is accessible to Engineers and Management only.]**__")
+                st.write("__**:white[In the mobile application, the 'Sterilization Station' Report can be viewed under the 'Reports' menu by sterilizer operators, Engineers, Supervisors and Management.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+
         if st.session_state.button7:
             st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>Mill Production and Breakdown</h6>", unsafe_allow_html=True)

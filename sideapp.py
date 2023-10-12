@@ -8,7 +8,7 @@ st.image('mypalm_logo.png', width=220)
 
 # Create buttons for different sections
 st.image("sime_logo.png", width=25)
-st.chat_input("Hi! I am MyPalm Bot!! What Information are you looking for? Click the above buttons to start!")
+st.chat_input("Hi! I am MyPalm Bot!! Click the above buttons to start!")
 #st.write('__**Hi! I am MyPalm Bot. What Information are you looking for? Click on one of the options below to start!!**__')
 button1 = st.button('__**:orange[Production Module 🏭]**__', key='1')
 button2 = st.button("__**:orange[Maintenance Module 🎰]**__", key='2')

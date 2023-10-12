@@ -39,7 +39,7 @@ if button3:
 
 # Display content based on button clicks
 if st.session_state.button1:
-    st.markdown("<h6 style='text-align: right; color:white;'>👨‍🚒 : Production Module</h6>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: right; color:black;'>👨‍🚒 : Production Module</h6>", unsafe_allow_html=True)
     st.divider()
     st.image("sime_logo.png", width=25)
     st.write("__**:white[Choose your domian below!!!]**__")
@@ -91,7 +91,7 @@ if st.session_state.button1:
         st.session_state.button7 = True
 
     if st.session_state.button7:
-        st.markdown("<h6 style='text-align: right; color:white;'>👨‍🚒 : Mill Production and Breakdown</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: right; color:black;'>👨‍🚒 : Mill Production and Breakdown</h6>", unsafe_allow_html=True)
         st.divider()
         st.image("sime_logo.png", width=25)
         st.write("__**:white[Pick your Query below!!!]**__")
@@ -200,7 +200,7 @@ if st.session_state.button1:
             st.session_state.button12 = False
             st.session_state.button13 = True
         if st.session_state.button8:
-            st.markdown("<h6 style='text-align: right; color:white;'>👨‍🚒 : How to Start the Production?</h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>👨‍🚒 : How to Start the Production?</h6>", unsafe_allow_html=True)
             st.divider()
             st.image("sime_logo.png", width=25)
             st.write("__**:white[This access is given to the Supervisor only. Supervisor can Start the mill production via mobile application]**__")

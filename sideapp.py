@@ -66,7 +66,7 @@ if st.session_state.button0:
         st.image("sime_logo.png", width=25)
         #st.write("__**:white[Choose your domian below!!!]**__")
         button4 = st.button('__**:orange[Sterilization]**__', key='4')
-        button5 = st.button("__**:orange[Pressing]**__", key='5')
+        button5 = st.button("__**:orange[Pressing ]**__", key='5')
         button6 = st.button("__**:orange[Oil Losses]**__", key='6')
         button7 = st.button("__**:orange[Mill Production and Breakdown]**__", key='7')
         st.divider()
@@ -238,6 +238,63 @@ if st.session_state.button0:
                 st.image("sime_logo.png", width=25)
                 st.write("__**:white[In the web application, you can find the 'Pressing Station' Report in the 'Production Reports' section through the dropdown menu. This report is accessible to Engineers and Management only.]**__")
                 st.write("__**:white[In the mobile application, the 'Pressing Station' Report can be viewed under the 'Reports' menu by Press Operators, Engineers, Supervisors and Management.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+
+        if st.session_state.button6:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>Oil Losses</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button61 = st.button("__**:orange[Why am I getting too many notifications all at once?]**__", key='61')
+            button62 = st.button("__**:orange[Why are the digestor and press offline, and why can't I enter data?]**__", key='62')
+            button63 = st.button("__**:orange[How to get Pressing Station report?]**__", key='63')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button61' not in st.session_state:
+                st.session_state.button61 = False
+            if 'button62' not in st.session_state:
+                st.session_state.button62 = False
+            if 'button63' not in st.session_state:
+                st.session_state.button63 = False
+
+            if button61:
+                st.session_state.button61 = True
+                st.session_state.button62 = False
+                st.session_state.button63 = False
+            if button62:
+                st.session_state.button61 = False
+                st.session_state.button62= True
+                st.session_state.button63 = False
+            if button63:
+                st.session_state.button61 = False
+                st.session_state.button62= False
+                st.session_state.button63 = True
+
+            if st.session_state.button61:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What is the use of oil loss prediction and where to see?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[The 'Oil Loss Prediction' page is accessible on the mobile application for Supervisors, Engineers, and Management, while on the web application, it's available for Engineers and Management. This page aids in predicting oil losses using the hourly sterilizer and press data entered by users. It provides a list of potential reasons for oil losses and suggests actions to prevent them. Real-time oil loss prediction analysis helps palm oil mills make quicker decisions, enhance efficiency, and save money.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button62:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why there is no prediction in the oil loss prediction page?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[The hourly press and sterilizer data are important for oil loss prediction, user should make sure to enter the press and sterilizer data in a timely manner for the AI prediction to function effectively.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button63:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to get Oil Loss report?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[In the web application, you can find the 'Oil Loss' Report in the 'Production Reports' section through the dropdown menu. This report is accessible to Engineers and Management only.]**__")
+                st.write("__**:white[In the mobile application, the 'Oil Loss' Report can be viewed under the 'Reports' menu by lab assistant, Engineers, Supervisors and Management.]**__")
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
 

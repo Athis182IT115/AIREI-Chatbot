@@ -1,5 +1,4 @@
 import streamlit as st
-
 # Set page title and icon
 st.set_page_config(page_title='MyPalm', page_icon='sime_logo.png')
 
@@ -221,9 +220,7 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button52:
                 st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
-                col1, col2 = st.columns(2)
-                with col1:
-                    st.markdown("<h6 style='text-align: right; color:black;'>Why are the digestor and press offline, and why can't I enter data?</h6>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why are the digestor and press offline, and why can't I enter data?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
                 st.write("__**:white[If the digester and press are offline, it could be due to:]**__")
@@ -380,7 +377,25 @@ if st.session_state.button0:
             st.write("Do your logic here")
 
     if st.session_state.button3:
-        st.write("button3 is True")
-
-        if st.button('Check 3'):
-            st.write("Do your logic here")
+        st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: right; color:black;'>General Questions</h6>", unsafe_allow_html=True)
+        st.divider()
+        st.image("sime_logo.png", width=25)
+        #st.write("__**:white[Choose your domian below!!!]**__")
+        button31 = st.button('__**:orange[How to add new user?]**__', key='31')
+        button32 = st.button("__**:orange[How to add new station?]**__", key='32')
+        button33 = st.button("__**:orange[How to generate QR code for the machinery?]**__", key='33')
+        button34 = st.button("__**:orange[Where to use the generated QR code?]**__", key='34')
+        button35 = st.button('__**:orange[How to access and view Weekly Report in web application?]**__', key='35')
+        button36 = st.button("__**:orange[Can MyPalm keep records of previous mill data?]**__", key='36')
+        button37 = st.button("__**:orange[What Engineer can do and view in MyPalm?]**__", key='37')
+        button38 = st.button("__**:orange[What Foreman & Chargeman can do and view in MyPalm?]**__", key='38')
+        button39 = st.button('__**:orange[What Supervisor can do and view in MyPalm?]**__', key='39')
+        button30 = st.button("__**:orange[I have forgotten my ID and password]**__", key='30')
+        button301 = st.button("__**:orange[Why does the screen display 'Unable to connect to the server,' and i cannot enter any data?]**__", key='301')
+        button302 = st.button("__**:orange[Why is the page stuck or continuously loading, and i couldn't view any records]**__", key='302')
+        button303 = st.button('__**:orange[What if there is no operator to key in the data?]**__', key='303')
+        button304 = st.button("__**:orange[I need to add worker's name in the work assign list]**__", key='304')
+        
+        st.divider()
+        st.chat_input("Pick your Query above!")

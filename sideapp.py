@@ -2,13 +2,6 @@ import streamlit as st
 
 # Set page title and icon
 st.set_page_config(page_title='MyPalm', page_icon='sime_logo.png')
-st.markdown("""
-<style>
-.st-button {
-  text-align: left;
-}
-</style>
-""", unsafe_allow_html=True)
 st.image('mypalm_logo.png', width=220)
 # Create buttons for different sections
 st.image("sime_logo.png", width=25)

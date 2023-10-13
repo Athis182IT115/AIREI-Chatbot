@@ -247,9 +247,9 @@ if st.session_state.button0:
             st.divider()
             st.image("sime_logo.png", width=25)
             #st.write("__**:white[Pick your Query below!!!]**__")
-            button61 = st.button("__**:orange[Why am I getting too many notifications all at once?]**__", key='61')
-            button62 = st.button("__**:orange[Why are the digestor and press offline, and why can't I enter data?]**__", key='62')
-            button63 = st.button("__**:orange[How to get Pressing Station report?]**__", key='63')
+            button61 = st.button("__**:orange[What is the use of oil loss prediction and where to see?]**__", key='61')
+            button62 = st.button("__**:orange[Why there is no prediction in the oil loss prediction page?]**__", key='62')
+            button63 = st.button("__**:orange[How to get Oil Loss report?]**__", key='63')
             st.divider()
             st.chat_input("Pick your Query above!")
             if 'button61' not in st.session_state:

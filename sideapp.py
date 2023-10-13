@@ -371,10 +371,6 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
     if st.session_state.button2:
-        st.write("button2 is True")
-
-        if st.button('Check 2'):
-            st.write("Do your logic here")
 
     if st.session_state.button3:
         st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
@@ -382,20 +378,356 @@ if st.session_state.button0:
         st.divider()
         st.image("sime_logo.png", width=25)
         #st.write("__**:white[Choose your domian below!!!]**__")
-        button31 = st.button('__**:orange[How to add new user?]**__', key='31')
-        button32 = st.button("__**:orange[How to add new station?]**__", key='32')
-        button33 = st.button("__**:orange[How to generate QR code for the machinery?]**__", key='33')
-        button34 = st.button("__**:orange[Where to use the generated QR code?]**__", key='34')
-        button35 = st.button('__**:orange[How to access and view Weekly Report in web application?]**__', key='35')
-        button36 = st.button("__**:orange[Can MyPalm keep records of previous mill data?]**__", key='36')
-        button37 = st.button("__**:orange[What Engineer can do and view in MyPalm?]**__", key='37')
-        button38 = st.button("__**:orange[What Foreman & Chargeman can do and view in MyPalm?]**__", key='38')
-        button39 = st.button('__**:orange[What Supervisor can do and view in MyPalm?]**__', key='39')
-        button30 = st.button("__**:orange[I have forgotten my ID and password]**__", key='30')
-        button301 = st.button("__**:orange[Why does the screen display 'Unable to connect to the server,' and i cannot enter any data?]**__", key='301')
-        button302 = st.button("__**:orange[Why is the page stuck or continuously loading, and i couldn't view any records]**__", key='302')
-        button303 = st.button('__**:orange[What if there is no operator to key in the data?]**__', key='303')
-        button304 = st.button("__**:orange[I need to add worker's name in the work assign list]**__", key='304')
-        
+        button31 = st.button('__**:orange[System Functionality]**__', key='31')
+        button32= st.button("__**:orange[User Query]**__", key='32')
+        button33= st.button("__**:orange[QR code]**__", key='33')
+
         st.divider()
-        st.chat_input("Pick your Query above!")
+        st.chat_input("Select your Category above!")
+        if 'button31' not in st.session_state:
+            st.session_state.button31 = False
+        if 'button32' not in st.session_state:
+            st.session_state.button32 = False
+        if 'button33' not in st.session_state:
+            st.session_state.button33 = False
+
+
+        if button31:
+            st.session_state.button31 = True
+            st.session_state.button32 = False
+            st.session_state.button33 = False
+        if button32:
+            st.session_state.button31 = False
+            st.session_state.button32 = True
+            st.session_state.button33 = False
+        if button33:
+            st.session_state.button31 = False
+            st.session_state.button32= False
+            st.session_state.button33= True
+
+        if st.session_state.button31:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>System Functionality</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button311 = st.button("__**:orange[How to add new user?]**__", key='311')
+            button312 = st.button("__**:orange[How to add new station?]**__", key='312')
+            button313 = st.button("__**:orange[How to access and view Weekly Report in web application?]**__", key='313')
+            button314 = st.button("__**:orange[Can MyPalm keep records of previous mill data?]**__", key='314')
+            button315 = st.button("__**:orange[Why does the screen display 'Unable to connect to the server,' and I cannot enter any data?]**__", key="315")
+            button316 = st.button("__**:orange[Why is the Page stuck or continuously loading, and I couldn't view any records?]**__", key='316')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button311' not in st.session_state:
+                st.session_state.button311 = False
+            if 'button312' not in st.session_state:
+                st.session_state.button312 = False
+            if 'button313' not in st.session_state:
+                st.session_state.button313 = False
+            if 'button314' not in st.session_state:
+                st.session_state.button314 = False
+            if 'button315' not in st.session_state:
+                st.session_state.button315 = False
+            if 'button316' not in st.session_state:
+                st.session_state.button316 = False
+
+            if button311:
+                st.session_state.button311 = True
+                st.session_state.button312 = False
+                st.session_state.button313 = False
+                st.session_state.button314= False
+                st.session_state.button315=False
+                st.session_state.button316=False
+            if button312:
+                st.session_state.button311 = False
+                st.session_state.button312 = True
+                st.session_state.button313 = False
+                st.session_state.button314= False
+                st.session_state.button315=False
+                st.session_state.button316=False
+            if button313:
+                st.session_state.button311 = False
+                st.session_state.button312 = False
+                st.session_state.button313 = True
+                st.session_state.button314= False
+                st.session_state.button315=False
+                st.session_state.button316=False
+            if button314:
+                st.session_state.button311 = False
+                st.session_state.button312 = False
+                st.session_state.button313 = False
+                st.session_state.button314= True
+                st.session_state.button315=False
+                st.session_state.button316=False
+            if button315:
+                st.session_state.button311 = False
+                st.session_state.button312 = False
+                st.session_state.button313 = False
+                st.session_state.button314= False
+                st.session_state.button315=True
+                st.session_state.button316=False
+            if button316:
+                st.session_state.button311 = False
+                st.session_state.button312 = False
+                st.session_state.button313 = False
+                st.session_state.button314= False
+                st.session_state.button315=False
+                st.session_state.button316=True
+
+            if st.session_state.button311:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to add new user?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Please contact the Engineer to add a new user using the web application.]**__")
+                st.write("__**:white[The Engineer can follow these steps :]**__")
+                st.write("__**:white[1. Go to 'User Master'.]**__")
+                st.write("__**:white[2. Click on 'Add New User'.]**__")
+                st.write("__**:white[3. Enter the User's name.]**__")
+                st.write("__**:white[4. Select the User Category.]**__")
+                st.write("__**:white[5. Enter the username and password.]**__")
+                st.write("__**:white[6. Click 'Save'.]**__")
+                st.write("__**:white[A new login will be created for the user. Please provide the username and password to the user so they can log in.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button312:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to add new station?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Please contact the Engineer to add a new station using the web application.]**__")
+                st.write("__**:white[The Engineer can follow these steps :]**__")
+                st.write("__**:white[1. Go to 'Station Master'.]**__")
+                st.write("__**:white[2. Click on 'Add New Station'.]**__")
+                st.write("__**:white[3. Enter the Station's name.]**__")
+                st.write("__**:white[4. There is no need to change the Station's code.]**__")
+                st.write("__**:white[5. Select the option whether to display the added station on the Maintenance Dashboard ]**__")
+                st.write("__**:white[6. Click 'Save.']**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button313:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to access and view Weekly Report in web application?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[The weekly report is accessible to both Engineers and Management through the web application. To view it, go to the 'Weekly Report' tab and use the date filter to access the report as needed.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button314:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Can MyPalm keep records of previous mill data?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Yes, MyPalm maintains records of all data entered into it. Its user-friendly interface allows easy search, retrieval and access to records as needed.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button315:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why does the screen display 'Unable to connect to the server,' and I cannot enter any data?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[We are currently making some changes, and MyPalm will be accessible soon. Please try again later or please contact us via WhatsApp.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button316:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why is the Page stuck or continuously loading, and I couldn't view any records?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Please close the app and clear it from running in the background on your phone. Then, try accessing the app again. If you encounter the same problem, please contact us via WhatsApp.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+
+        if st.session_state.button5:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>Pressing</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button51 = st.button("__**:orange[Why am I getting too many notifications all at once?]**__", key='51')
+            button52 = st.button("__**:orange[Why are the digestor and press offline, and why can't I enter data?]**__", key='52')
+            button53 = st.button("__**:orange[How to get Pressing Station report?]**__", key='53')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button51' not in st.session_state:
+                st.session_state.button51 = False
+            if 'button52' not in st.session_state:
+                st.session_state.button52 = False
+            if 'button53' not in st.session_state:
+                st.session_state.button53 = False
+
+            if button51:
+                st.session_state.button51 = True
+                st.session_state.button52 = False
+                st.session_state.button53 = False
+            if button52:
+                st.session_state.button51 = False
+                st.session_state.button52= True
+                st.session_state.button53 = False
+            if button53:
+                st.session_state.button51 = False
+                st.session_state.button52= False
+                st.session_state.button53 = True
+
+            if st.session_state.button51:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why am I getting too many notifications all at once?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[The notification is generated based on the door open time and date data entered by the sterilizer operator. If sterilizer cycles are happening frequently, you'll get more notifications.]**__")
+                st.write("__**:white[If you receive the same notification multiple times within a 15-minutes, you can choose either to key in the data or skip it.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button52:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why are the digestor and press offline, and why can't I enter data?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[If the digester and press are offline, it could be due to:]**__")
+                st.write("__**:white[1. The machinery being turned off]**__")
+                st.write("__**:white[2. The machinery undergoing a breakdown]**__")
+                st.write("__**:white[To address these issues, please inform the foreman and supervisor to turn it back on.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button53:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to get Pressing Station report?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[In the web application, you can find the 'Pressing Station' Report in the 'Production Reports' section through the dropdown menu. This report is accessible to Engineers and Management only.]**__")
+                st.write("__**:white[In the mobile application, the 'Pressing Station' Report can be viewed under the 'Reports' menu by Press Operators, Engineers, Supervisors and Management.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+
+        if st.session_state.button6:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>Oil Losses</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button61 = st.button("__**:orange[What is the use of oil loss prediction and where to see?]**__", key='61')
+            button62 = st.button("__**:orange[Why there is no prediction in the oil loss prediction page?]**__", key='62')
+            button63 = st.button("__**:orange[How to get Oil Loss report?]**__", key='63')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button61' not in st.session_state:
+                st.session_state.button61 = False
+            if 'button62' not in st.session_state:
+                st.session_state.button62 = False
+            if 'button63' not in st.session_state:
+                st.session_state.button63 = False
+
+            if button61:
+                st.session_state.button61 = True
+                st.session_state.button62 = False
+                st.session_state.button63 = False
+            if button62:
+                st.session_state.button61 = False
+                st.session_state.button62= True
+                st.session_state.button63 = False
+            if button63:
+                st.session_state.button61 = False
+                st.session_state.button62= False
+                st.session_state.button63 = True
+
+            if st.session_state.button61:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What is the use of oil loss prediction and where to see?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[The 'Oil Loss Prediction' page is accessible on the mobile application for Supervisors, Engineers, and Management, while on the web application, it's available for Engineers and Management. This page aids in predicting oil losses using the hourly sterilizer and press data entered by users. It provides a list of potential reasons for oil losses and suggests actions to prevent them. Real-time oil loss prediction analysis helps palm oil mills make quicker decisions, enhance efficiency, and save money.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button62:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why there is no prediction in the oil loss prediction page?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[The hourly press and sterilizer data are important for oil loss prediction, user should make sure to enter the press and sterilizer data in a timely manner for the AI prediction to function effectively.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button63:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to get Oil Loss report?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[In the web application, you can find the 'Oil Loss' Report in the 'Production Reports' section through the dropdown menu. This report is accessible to Engineers and Management only.]**__")
+                st.write("__**:white[In the mobile application, the 'Oil Loss' Report can be viewed under the 'Reports' menu by lab assistant, Engineers, Supervisors and Management.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+
+        if st.session_state.button7:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>Mill Production and Breakdown</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button8 = st.button('__**:orange[How to Start the Production?]**__', key='8')
+            button9 = st.button("__**:orange[How to Stop the Production?]**__", key='9')
+            button10 = st.button("__**:orange[How to turn On the machine?]**__", key='10')
+            button11 = st.button("__**:orange[How to turn Off the machine?]**__", key='11')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button8' not in st.session_state:
+                st.session_state.button8 = False
+            if 'button9' not in st.session_state:
+                st.session_state.button9 = False
+            if 'button10' not in st.session_state:
+                st.session_state.button10 = False
+            if 'button11' not in st.session_state:
+                st.session_state.button11 = False
+
+            if button8:
+                st.session_state.button8 = True
+                st.session_state.button9 = False
+                st.session_state.button10 = False
+                st.session_state.button11 = False
+            if button9:
+                st.session_state.button8 = False
+                st.session_state.button9 = True
+                st.session_state.button10 = False
+                st.session_state.button11 = False
+            if button10:
+                st.session_state.button8 = False
+                st.session_state.button9 = False
+                st.session_state.button10 = True
+                st.session_state.button11 = False
+            if button11:
+                st.session_state.button8 = False
+                st.session_state.button9 = False
+                st.session_state.button10 = False
+                st.session_state.button11 = True
+
+            if st.session_state.button8:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to Start the Production?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[This access is given to the Supervisor only. Supervisor can start the mill production via mobile application. In mobile application, go to the Dashboard and tap on the 'Start Production' button.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button9:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to Stop the Production?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[This access is given to the Supervisor only. Supervisor can stop the mill production via mobile application. In mobile application, go to the Dashboard and tap on the 'Stop Production' button.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button10:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to turn On the machine?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[This access is given to the Supervisor only. Supervisor can turn on a machinery via mobile application. In mobile application, go to the Dashboard and tap on the machine name which has been turned off. Give Yes to the option 'Turn on the machine']**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button11:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to turn Off the machine?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[This access is given to the Supervisor only. Supervisor can turn off a machinery via mobile application. In mobile application, go to the Dashboard and tap on the machine name. For Problem, select 'Not in Use/Shutdown']**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")

@@ -2,6 +2,7 @@ import streamlit as st
 
 # Set page title and icon
 st.set_page_config(page_title='MyPalm', page_icon='sime_logo.png')
+
 st.image('mypalm_logo.png', width=220)
 # Create buttons for different sections
 st.image("sime_logo.png", width=25)
@@ -220,7 +221,9 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button52:
                 st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
-                st.markdown("<h6 style='text-align: right; color:black;'>Why are the digestor and press offline, and why can't I enter data?</h6>", unsafe_allow_html=True)
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.markdown("<h6 style='text-align: right; color:black;'>Why are the digestor and press offline, and why can't I enter data?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
                 st.write("__**:white[If the digester and press are offline, it could be due to:]**__")
@@ -367,7 +370,7 @@ if st.session_state.button0:
                 st.markdown("<h6 style='text-align: right; color:black;'>How to turn Off the machine?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
-                st.write("__**:white[This access is given to the Supervisor only. Supervisor can turn off a machinery via mobile application. In mobile application, go to the Dashboard and tap on the machine name. For Problem, select 'Not in Use/Sutdown']**__")
+                st.write("__**:white[This access is given to the Supervisor only. Supervisor can turn off a machinery via mobile application. In mobile application, go to the Dashboard and tap on the machine name. For Problem, select 'Not in Use/Shutdown']**__")
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
     if st.session_state.button2:

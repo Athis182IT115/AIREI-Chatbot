@@ -180,6 +180,67 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
 
+        if st.session_state.button5:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>Pressing</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button51 = st.button("__**:orange[Why am I getting too many notifications all at once?]**__", key='51')
+            button52 = st.button("__**:orange[Why are the digestor and press offline, and why can't I enter data?]**__", key='52')
+            button53 = st.button("__**:orange[How to get Pressing Station report?]**__", key='53')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button51' not in st.session_state:
+                st.session_state.button51 = False
+            if 'button52' not in st.session_state:
+                st.session_state.button52 = False
+            if 'button53' not in st.session_state:
+                st.session_state.button53 = False
+
+            if button51:
+                st.session_state.button51 = True
+                st.session_state.button52 = False
+                st.session_state.button53 = False
+            if button52:
+                st.session_state.button51 = False
+                st.session_state.button52= True
+                st.session_state.button53 = False
+            if button53:
+                st.session_state.button51 = False
+                st.session_state.button52= False
+                st.session_state.button53 = True
+
+            if st.session_state.button51:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why am I getting too many notifications all at once?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[The notification is generated based on the door open time and date data entered by the sterilizer operator. If sterilizer cycles are happening frequently, you'll get more notifications.]**__")
+                st.write("__**:white[If you receive the same notification multiple times within a 15-minutes, you can choose either to key in the data or skip it.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button52:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Why are the digestor and press offline, and why can't I enter data?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[If the digester and press are offline, it could be due to:]**__")
+                st.write("__**:white[1. The machinery being turned off]**__")
+                st.write("__**:white[2. The machinery undergoing a breakdown]**__")
+                st.write("__**:white[To address these issues, please inform the foreman and supervisor to turn it back on.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button53:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to get Pressing Station report?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[In the web application, you can find the 'Pressing Station' Report in the 'Production Reports' section through the dropdown menu. This report is accessible to Engineers and Management only.]**__")
+                st.write("__**:white[In the mobile application, the 'Pressing Station' Report can be viewed under the 'Reports' menu by Press Operators, Engineers, Supervisors and Management.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+
         if st.session_state.button7:
             st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>Mill Production and Breakdown</h6>", unsafe_allow_html=True)

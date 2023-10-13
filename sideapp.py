@@ -66,7 +66,7 @@ if st.session_state.button0:
         st.image("sime_logo.png", width=25)
         #st.write("__**:white[Choose your domian below!!!]**__")
         button4 = st.button('__**:orange[Sterilization]**__', key='4')
-        button5 = st.button("__**:orange[Pressing ]**__", key='5')
+        button5 = st.button("__**:orange[Pressing]**__", key='5')
         button6 = st.button("__**:orange[Oil Losses]**__", key='6')
         button7 = st.button("__**:orange[Mill Production and Breakdown]**__", key='7')
         st.divider()

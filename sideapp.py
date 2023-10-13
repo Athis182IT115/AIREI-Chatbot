@@ -371,7 +371,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
     if st.session_state.button2:
-
+        pass
     if st.session_state.button3:
         st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right; color:black;'>General Questions</h6>", unsafe_allow_html=True)

@@ -21,7 +21,7 @@ if button00:
     st.session_state.button00 = True
 
 if st.session_state.button0:
-    st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+    st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: right; color:black;'>English</h6>", unsafe_allow_html=True)
     st.divider()
     st.image("sime_logo.png", width=25)
@@ -58,7 +58,7 @@ if st.session_state.button0:
 
     # Display content based on button clicks
     if st.session_state.button1:
-        st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+        st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right; color:black;'>Production Module</h6>", unsafe_allow_html=True)
         st.divider()
         st.image("sime_logo.png", width=25)
@@ -100,7 +100,7 @@ if st.session_state.button0:
             st.session_state.button7 = True
 
         if st.session_state.button4:
-            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>Sterilization</h6>", unsafe_allow_html=True)
             st.divider()
             st.image("sime_logo.png", width=25)
@@ -142,7 +142,7 @@ if st.session_state.button0:
                 st.session_state.button44 = True
 
             if st.session_state.button41:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>Why can't I key in sterilizer data?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -153,7 +153,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button42:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>What should I do if I entered date incorrectly?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -161,7 +161,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button43:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How do I key in if there is no peak graph?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -169,7 +169,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button44:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to get Sterilization Station report?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -179,7 +179,7 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
 
         if st.session_state.button5:
-            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>Pressing</h6>", unsafe_allow_html=True)
             st.divider()
             st.image("sime_logo.png", width=25)
@@ -210,7 +210,7 @@ if st.session_state.button0:
                 st.session_state.button53 = True
 
             if st.session_state.button51:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>Why am I getting too many notifications all at once?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -219,7 +219,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button52:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>Why are the digestor and press offline, and why can't I enter data?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -230,7 +230,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button53:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to get Pressing Station report?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -240,7 +240,7 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
 
         if st.session_state.button6:
-            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>Oil Losses</h6>", unsafe_allow_html=True)
             st.divider()
             st.image("sime_logo.png", width=25)
@@ -271,7 +271,7 @@ if st.session_state.button0:
                 st.session_state.button63 = True
 
             if st.session_state.button61:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>What is the use of oil loss prediction and where to see?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -279,7 +279,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button62:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>Why there is no prediction in the oil loss prediction page?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -287,7 +287,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button63:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to get Oil Loss report?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -297,7 +297,7 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
 
         if st.session_state.button7:
-            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>Mill Production and Breakdown</h6>", unsafe_allow_html=True)
             st.divider()
             st.image("sime_logo.png", width=25)
@@ -339,7 +339,7 @@ if st.session_state.button0:
                 st.session_state.button11 = True
 
             if st.session_state.button8:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to Start the Production?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -347,7 +347,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button9:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to Stop the Production?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -355,7 +355,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button10:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to turn On the machine?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -363,7 +363,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button11:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to turn Off the machine?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -372,9 +372,8 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
     if st.session_state.button2:
         pass
-
     if st.session_state.button3:
-        st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+        st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: right; color:black;'>General Questions</h6>", unsafe_allow_html=True)
         st.divider()
         st.image("sime_logo.png", width=25)
@@ -407,7 +406,7 @@ if st.session_state.button0:
             st.session_state.button33= True
 
         if st.session_state.button31:
-            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>System Functionality</h6>", unsafe_allow_html=True)
             st.divider()
             st.image("sime_logo.png", width=25)
@@ -477,7 +476,7 @@ if st.session_state.button0:
                 st.session_state.button316=True
 
             if st.session_state.button311:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to add new user?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -493,7 +492,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button312:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to add new station?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -508,7 +507,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button313:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>How to access and view Weekly Report in web application?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -516,7 +515,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button314:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>Can MyPalm keep records of previous mill data?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -524,7 +523,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button315:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>Why does the screen display 'Unable to connect to the server,' and I cannot enter any data?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -532,7 +531,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button316:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>Why is the Page stuck or continuously loading, and I couldn't view any records?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -541,7 +540,7 @@ if st.session_state.button0:
                 st.chat_input("Thank You for using MyPalm Bot!!")
 
         if st.session_state.button32:
-            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
             st.markdown("<h6 style='text-align: right; color:black;'>User Query</h6>", unsafe_allow_html=True)
             st.divider()
             st.image("sime_logo.png", width=25)
@@ -611,7 +610,7 @@ if st.session_state.button0:
                 st.session_state.button326=True
 
             if st.session_state.button321:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>What Engineer can do and view in MyPalm?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -625,7 +624,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button322:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>What Foreman & Chargeman can do and view in MyPalm?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -638,7 +637,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button323:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>What Supervisor can do and view in MyPalm?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -654,7 +653,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button324:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>I have forgotten my ID and password]</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -662,7 +661,7 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button325:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>What if there is no operator to key in the data?</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
@@ -670,10 +669,52 @@ if st.session_state.button0:
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
             if st.session_state.button326:
-                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
                 st.markdown("<h6 style='text-align: right; color:black;'>I need to add worker's name in the work assign list</h6>", unsafe_allow_html=True)
                 st.divider()
                 st.image("sime_logo.png", width=25)
                 st.write("__**:white[Please contact Engineer to add the worker's name as a Fitter user in the web application under User Master screen and you will be able to see the added worker's name in the assign list. ]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+        if st.session_state.button33:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>QR code</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button331 = st.button("__**:orange[How to generate QR code for the machinery?]**__", key='331')
+            button332 = st.button("__**:orange[Where to use the generated QR code?]**__", key='332')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button331' not in st.session_state:
+                st.session_state.button331 = False
+            if 'button332' not in st.session_state:
+                st.session_state.button332 = False
+
+            if button331:
+                st.session_state.button331 = True
+                st.session_state.button332 = False
+            if button332:
+                st.session_state.button331 = False
+                st.session_state.button332 = True
+
+            if st.session_state.button331:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>How to generate QR code for the machinery?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Please contact the Engineer to generate QR Code]**__")
+                st.write("__**:white[The Engineer can follow these steps :]**__")
+                st.write("__**:white[1. Go to 'Machinery QR Code']**__")
+                st.write("__**:white[2. Select the station and machinery name ]**__")
+                st.write("__**:white[3. Click 'Generate.']**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button332:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>Where to use the generated QR code?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Any users can scan the QR code via their mobile app under 'Scanner'. Users can view the Maintenance History of a machinery including Maintenance Timeline]**__")
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")

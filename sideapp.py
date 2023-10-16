@@ -539,3 +539,141 @@ if st.session_state.button0:
                 st.write("__**:white[Please close the app and clear it from running in the background on your phone. Then, try accessing the app again. If you encounter the same problem, please contact us via WhatsApp.]**__")
                 st.divider()
                 st.chat_input("Thank You for using MyPalm Bot!!")
+
+        if st.session_state.button32:
+            st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: right; color:black;'>User Query</h6>", unsafe_allow_html=True)
+            st.divider()
+            st.image("sime_logo.png", width=25)
+            #st.write("__**:white[Pick your Query below!!!]**__")
+            button321 = st.button("__**:orange[What Engineer can do and view in MyPalm?]**__", key='321')
+            button322 = st.button("__**:orange[What Foreman & Chargeman can do and view in MyPalm?]**__", key='322')
+            button323 = st.button("__**:orange[What Supervisor can do and view in MyPalm?]**__", key='323')
+            button324 = st.button("__**:orange[I have forgotten my ID and password]**__", key='324')
+            button325 = st.button("__**:orange[What if there is no operator to key in the data?]**__", key="325")
+            button326 = st.button("__**:orange[I need to add worker's name in the work assign list]**__", key='326')
+            st.divider()
+            st.chat_input("Pick your Query above!")
+            if 'button321' not in st.session_state:
+                st.session_state.button321 = False
+            if 'button322' not in st.session_state:
+                st.session_state.button322 = False
+            if 'button323' not in st.session_state:
+                st.session_state.button323 = False
+            if 'button324' not in st.session_state:
+                st.session_state.button324 = False
+            if 'button325' not in st.session_state:
+                st.session_state.button325 = False
+            if 'button326' not in st.session_state:
+                st.session_state.button326 = False
+
+            if button321:
+                st.session_state.button321 = True
+                st.session_state.button322 = False
+                st.session_state.button323 = False
+                st.session_state.button324= False
+                st.session_state.button325=False
+                st.session_state.button326=False
+            if button322:
+                st.session_state.button321 = False
+                st.session_state.button322 = True
+                st.session_state.button323 = False
+                st.session_state.button324= False
+                st.session_state.button325=False
+                st.session_state.button326=False
+            if button323:
+                st.session_state.button321 = False
+                st.session_state.button322 = False
+                st.session_state.button323 = True
+                st.session_state.button324= False
+                st.session_state.button325=False
+                st.session_state.button326=False
+            if button324:
+                st.session_state.button321 = False
+                st.session_state.button322 = False
+                st.session_state.button323 = False
+                st.session_state.button324= True
+                st.session_state.button325=False
+                st.session_state.button326=False
+            if button325:
+                st.session_state.button321 = False
+                st.session_state.button322 = False
+                st.session_state.button323 = False
+                st.session_state.button324= False
+                st.session_state.button325=True
+                st.session_state.button326=False
+            if button326:
+                st.session_state.button321 = False
+                st.session_state.button322 = False
+                st.session_state.button323 = False
+                st.session_state.button324= False
+                st.session_state.button325=False
+                st.session_state.button326=True
+
+            if st.session_state.button321:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What Engineer can do and view in MyPalm?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Below are the list of task and responsibilities of an Engineer in MyPalm system ]**__")
+                st.write("__**:white[1. Create Corrective Maintenance notification ]**__")
+                st.write("__**:white[2. Do acknowledgement for Corrective Maintenance and Preventive Maintenance records ]**__")
+                st.write("__**:white[3. Master data update:user list, station list, machinery list with parts details (with Routine Preventive Maintenance schedule & Replacement Preventive Maintenance maximum running hours settings).]**__")
+                st.write("__**:white[4. View production and maintenance reports via both mobile and web application.]**__")
+                st.write("__**:white[5. Generate QR code for machinery.]**__")
+                st.write("__**:white[6. Do acknowledgement for production alerts attended by Supervisors.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button322:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What Foreman & Chargeman can do and view in MyPalm?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Below are the list of task and responsibilities of a Foreman & Chargeman in MyPalm system]**__")
+                st.write("__**:white[1. Create Corrective Maintenance notification]**__")
+                st.write("__**:white[2. Update Corrective Maintenance notification reported by Engineer and Supervisor.]**__")
+                st.write("__**:white[3. Assign Corrective Maintenance and Preventive Maintenance records to fitter and chargeman]**__")
+                st.write("__**:white[4. Do verification for Corrective Maintenance and Preventive Maintenance records ]**__")
+                st.write("__**:white[5. View Maintenance reports via mobile application]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button323:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What Supervisor can do and view in MyPalm?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Below are the list of task and responsibilities of a Supervisor in MyPalm system]**__")
+                st.write("__**:white[1. Start-stop production & machineries]**__")
+                st.write("__**:white[2. Turn on and off stations.]**__")
+                st.write("__**:white[3. Report mill breakdown]**__")
+                st.write("__**:white[4. Create Corrective Maintenance notification]**__")
+                st.write("__**:white[5. View Maintenance Report]**__")
+                st.write("__**:white[6. View Production Report]**__")
+                st.write("__**:white[7. Attend Production alerts]**__")
+                st.write("__**:white[8. Update FFB cages]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button324:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>I have forgotten my ID and password]</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Please contact us via WhatsApp and provide your name and mill code.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button325:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>What if there is no operator to key in the data?</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[If there is no designated operator available to input the data, please contact us via WhatsApp to inform us or to request a backup ID.]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
+            if st.session_state.button326:
+                st.markdown("<p align='right'> <img width='28' src='https://cdn-icons-png.flaticon.com/128/1256/1256650.png'> </p>", unsafe_allow_html=True)
+                st.markdown("<h6 style='text-align: right; color:black;'>I need to add worker's name in the work assign list</h6>", unsafe_allow_html=True)
+                st.divider()
+                st.image("sime_logo.png", width=25)
+                st.write("__**:white[Please contact Engineer to add the worker's name as a Fitter user in the web application under User Master screen and you will be able to see the added worker's name in the assign list. ]**__")
+                st.divider()
+                st.chat_input("Thank You for using MyPalm Bot!!")
